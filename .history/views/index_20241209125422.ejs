@@ -1,0 +1,15 @@
+function isLoggedIn(req, res, next) {
+if (req.isAuthenticated()) {
+return next(); // User is authenticated, proceed to the next middleware
+} else {
+res.redirect('/login'); // Redirect to login if not authenticated
+}
+}
+
+function isLoggedIn(req, res, next) {
+if (req.isAuthenticated()) {
+return next(); // User is authenticated, proceed to the next middleware
+} else {
+res.redirect('/login'); // Redirect to login if not authenticated
+}
+}
